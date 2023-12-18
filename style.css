@@ -42,9 +42,10 @@ body {
 /* MAIN SECTION*/
 /**************************/
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 3rem;
+  max-width: 111rem;
 }
 .box {
   padding: 3.2rem;
@@ -60,6 +61,7 @@ main {
 .supervisor,
 .calculator {
   align-self: center;
+  width: 100%;
 }
 .secondary-header {
   font-size: 2rem;
@@ -70,7 +72,7 @@ main {
 .item-description {
   font-size: 1.3rem;
   font-weight: 400;
-  width: 28.6rem;
+  max-width: 28.6rem;
 }
 .teambuilder-karma-container {
   display: flex;
@@ -92,7 +94,7 @@ main {
 
 @media (max-width: 90em) {
   main {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
   body {
     font-size: 1.3rem;
