@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 8rem 16.5rem;
+  align-items: center;
 }
 
 /**************************/
@@ -45,7 +46,8 @@ main {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  max-width: 111rem;
+  width: 100%;
+  justify-content: center;
 }
 .box {
   padding: 3.2rem;
@@ -61,7 +63,6 @@ main {
 .supervisor,
 .calculator {
   align-self: center;
-  width: 100%;
 }
 .secondary-header {
   font-size: 2rem;
@@ -94,6 +95,7 @@ main {
 
 @media (max-width: 90em) {
   main {
+    width: 100%;
     flex-direction: column;
   }
   body {
@@ -108,5 +110,10 @@ main {
   }
   .text-box {
     padding-bottom: 3.3rem;
+  }
+  .supervisor,
+  .calculator {
+    align-self: center;
+    width: 100%;
   }
 }
